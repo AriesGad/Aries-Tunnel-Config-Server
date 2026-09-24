@@ -1,6 +1,6 @@
 {
   "Version": "1.0.0",
-  "Message": "Updated SSH profiles. ZIVPN account entries are listed separately and require ZIVPN protocol support.",
+  "Message": "User-provided SSH profiles and ZIVPN SSH accounts. ZIVPN account ports are listed as separate SSH server choices.",
   "Servers": [
     {
       "Name": "Claro Redes Multi ON🟢",
@@ -117,78 +117,386 @@
       "username": "Domi123",
       "password": "1234",
       "category": "provided-10"
-    }
-  ],
-  "ZIVPNServers": [
+    },
     {
-      "Name": "ZIVPN Germany",
-      "Protocol": "ZIVPN",
-      "Host": "watchde.zivpn.com",
+      "Name": "ZIVPN Germany SSH 22",
+      "Flag": "DE",
+      "Country": "Germany",
+      "tunnel": "SSH",
+      "SSHHost": "watchde.zivpn.com",
+      "SSHPort": "22",
       "username": "zivpn_390jjgek",
       "password": "bdt3gss7",
-      "Expires": "2027-08-11",
-      "Ports": [
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
         22,
         53,
         443,
         80
-      ]
+      ],
+      "category": "zivpn-de-22"
     },
     {
-      "Name": "ZIVPN France",
-      "Protocol": "ZIVPN",
-      "Host": "watchfr.zivpn.com",
+      "Name": "ZIVPN Germany SSH 53",
+      "Flag": "DE",
+      "Country": "Germany",
+      "tunnel": "SSH",
+      "SSHHost": "watchde.zivpn.com",
+      "SSHPort": "53",
+      "username": "zivpn_390jjgek",
+      "password": "bdt3gss7",
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
+        22,
+        53,
+        443,
+        80
+      ],
+      "category": "zivpn-de-53"
+    },
+    {
+      "Name": "ZIVPN Germany SSH 443",
+      "Flag": "DE",
+      "Country": "Germany",
+      "tunnel": "SSH",
+      "SSHHost": "watchde.zivpn.com",
+      "SSHPort": "443",
+      "username": "zivpn_390jjgek",
+      "password": "bdt3gss7",
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
+        22,
+        53,
+        443,
+        80
+      ],
+      "category": "zivpn-de-443"
+    },
+    {
+      "Name": "ZIVPN Germany SSH 80",
+      "Flag": "DE",
+      "Country": "Germany",
+      "tunnel": "SSH",
+      "SSHHost": "watchde.zivpn.com",
+      "SSHPort": "80",
+      "username": "zivpn_390jjgek",
+      "password": "bdt3gss7",
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
+        22,
+        53,
+        443,
+        80
+      ],
+      "category": "zivpn-de-80"
+    },
+    {
+      "Name": "ZIVPN France SSH 22",
+      "Flag": "FR",
+      "Country": "France",
+      "tunnel": "SSH",
+      "SSHHost": "watchfr.zivpn.com",
+      "SSHPort": "22",
       "username": "zivpn_q35wi5rj",
       "password": "vlpfi5d6",
-      "Expires": "2027-08-11",
-      "Ports": [
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
         22,
         53,
         443,
         80
-      ]
+      ],
+      "category": "zivpn-fr-22"
     },
     {
-      "Name": "ZIVPN United Kingdom",
-      "Protocol": "ZIVPN",
-      "Host": "watchgb.zivpn.com",
+      "Name": "ZIVPN France SSH 53",
+      "Flag": "FR",
+      "Country": "France",
+      "tunnel": "SSH",
+      "SSHHost": "watchfr.zivpn.com",
+      "SSHPort": "53",
+      "username": "zivpn_q35wi5rj",
+      "password": "vlpfi5d6",
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
+        22,
+        53,
+        443,
+        80
+      ],
+      "category": "zivpn-fr-53"
+    },
+    {
+      "Name": "ZIVPN France SSH 443",
+      "Flag": "FR",
+      "Country": "France",
+      "tunnel": "SSH",
+      "SSHHost": "watchfr.zivpn.com",
+      "SSHPort": "443",
+      "username": "zivpn_q35wi5rj",
+      "password": "vlpfi5d6",
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
+        22,
+        53,
+        443,
+        80
+      ],
+      "category": "zivpn-fr-443"
+    },
+    {
+      "Name": "ZIVPN France SSH 80",
+      "Flag": "FR",
+      "Country": "France",
+      "tunnel": "SSH",
+      "SSHHost": "watchfr.zivpn.com",
+      "SSHPort": "80",
+      "username": "zivpn_q35wi5rj",
+      "password": "vlpfi5d6",
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
+        22,
+        53,
+        443,
+        80
+      ],
+      "category": "zivpn-fr-80"
+    },
+    {
+      "Name": "ZIVPN United Kingdom SSH 22",
+      "Flag": "GB",
+      "Country": "United Kingdom",
+      "tunnel": "SSH",
+      "SSHHost": "watchgb.zivpn.com",
+      "SSHPort": "22",
       "username": "zivpn_kv5vt9bh",
       "password": "v79ad2xk",
-      "Expires": "2027-08-11",
-      "Ports": [
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
         22,
         53,
         443,
         80
-      ]
+      ],
+      "category": "zivpn-gb-22"
     },
     {
-      "Name": "ZIVPN USA",
-      "Protocol": "ZIVPN",
-      "Host": "watchus.zivpn.com",
+      "Name": "ZIVPN United Kingdom SSH 53",
+      "Flag": "GB",
+      "Country": "United Kingdom",
+      "tunnel": "SSH",
+      "SSHHost": "watchgb.zivpn.com",
+      "SSHPort": "53",
+      "username": "zivpn_kv5vt9bh",
+      "password": "v79ad2xk",
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
+        22,
+        53,
+        443,
+        80
+      ],
+      "category": "zivpn-gb-53"
+    },
+    {
+      "Name": "ZIVPN United Kingdom SSH 443",
+      "Flag": "GB",
+      "Country": "United Kingdom",
+      "tunnel": "SSH",
+      "SSHHost": "watchgb.zivpn.com",
+      "SSHPort": "443",
+      "username": "zivpn_kv5vt9bh",
+      "password": "v79ad2xk",
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
+        22,
+        53,
+        443,
+        80
+      ],
+      "category": "zivpn-gb-443"
+    },
+    {
+      "Name": "ZIVPN United Kingdom SSH 80",
+      "Flag": "GB",
+      "Country": "United Kingdom",
+      "tunnel": "SSH",
+      "SSHHost": "watchgb.zivpn.com",
+      "SSHPort": "80",
+      "username": "zivpn_kv5vt9bh",
+      "password": "v79ad2xk",
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
+        22,
+        53,
+        443,
+        80
+      ],
+      "category": "zivpn-gb-80"
+    },
+    {
+      "Name": "ZIVPN USA SSH 22",
+      "Flag": "US",
+      "Country": "USA",
+      "tunnel": "SSH",
+      "SSHHost": "watchus.zivpn.com",
+      "SSHPort": "22",
       "username": "zivpn_t1g36gaa",
       "password": "3o87exal",
-      "Expires": "2027-08-11",
-      "Ports": [
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
         22,
         53,
         443,
         80
-      ]
+      ],
+      "category": "zivpn-us-22"
     },
     {
-      "Name": "ZIVPN Singapore",
-      "Protocol": "ZIVPN",
-      "Host": "watchsg.zivpn.com",
-      "username": "zivpn_p56klmp1",
-      "password": "pnmg45id",
-      "Expires": "2027-08-11",
-      "Ports": [
+      "Name": "ZIVPN USA SSH 53",
+      "Flag": "US",
+      "Country": "USA",
+      "tunnel": "SSH",
+      "SSHHost": "watchus.zivpn.com",
+      "SSHPort": "53",
+      "username": "zivpn_t1g36gaa",
+      "password": "3o87exal",
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
         22,
         53,
         443,
         80
-      ]
+      ],
+      "category": "zivpn-us-53"
+    },
+    {
+      "Name": "ZIVPN USA SSH 443",
+      "Flag": "US",
+      "Country": "USA",
+      "tunnel": "SSH",
+      "SSHHost": "watchus.zivpn.com",
+      "SSHPort": "443",
+      "username": "zivpn_t1g36gaa",
+      "password": "3o87exal",
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
+        22,
+        53,
+        443,
+        80
+      ],
+      "category": "zivpn-us-443"
+    },
+    {
+      "Name": "ZIVPN USA SSH 80",
+      "Flag": "US",
+      "Country": "USA",
+      "tunnel": "SSH",
+      "SSHHost": "watchus.zivpn.com",
+      "SSHPort": "80",
+      "username": "zivpn_t1g36gaa",
+      "password": "3o87exal",
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
+        22,
+        53,
+        443,
+        80
+      ],
+      "category": "zivpn-us-80"
+    },
+    {
+      "Name": "ZIVPN Singapore SSH 22",
+      "Flag": "SG",
+      "Country": "Singapore",
+      "tunnel": "SSH",
+      "SSHHost": "watchsg.zivpn.com",
+      "SSHPort": "22",
+      "username": "zivpn_p56klmp1",
+      "password": "pnmg45id",
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
+        22,
+        53,
+        443,
+        80
+      ],
+      "category": "zivpn-sg-22"
+    },
+    {
+      "Name": "ZIVPN Singapore SSH 53",
+      "Flag": "SG",
+      "Country": "Singapore",
+      "tunnel": "SSH",
+      "SSHHost": "watchsg.zivpn.com",
+      "SSHPort": "53",
+      "username": "zivpn_p56klmp1",
+      "password": "pnmg45id",
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
+        22,
+        53,
+        443,
+        80
+      ],
+      "category": "zivpn-sg-53"
+    },
+    {
+      "Name": "ZIVPN Singapore SSH 443",
+      "Flag": "SG",
+      "Country": "Singapore",
+      "tunnel": "SSH",
+      "SSHHost": "watchsg.zivpn.com",
+      "SSHPort": "443",
+      "username": "zivpn_p56klmp1",
+      "password": "pnmg45id",
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
+        22,
+        53,
+        443,
+        80
+      ],
+      "category": "zivpn-sg-443"
+    },
+    {
+      "Name": "ZIVPN Singapore SSH 80",
+      "Flag": "SG",
+      "Country": "Singapore",
+      "tunnel": "SSH",
+      "SSHHost": "watchsg.zivpn.com",
+      "SSHPort": "80",
+      "username": "zivpn_p56klmp1",
+      "password": "pnmg45id",
+      "provider": "ZIVPN",
+      "AccountExpires": "2027-08-11",
+      "AvailablePorts": [
+        22,
+        53,
+        443,
+        80
+      ],
+      "category": "zivpn-sg-80"
     }
   ]
 }
