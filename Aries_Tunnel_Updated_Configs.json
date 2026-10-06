@@ -83,7 +83,7 @@
       "PublicKey": "0592230dfb8c1c789e7ba4508c5d8f785598fcd9c6c3731dc680fc05cfc2800e",
       "TrojanWS": "trojan://add56df7-f5ae-40f8-839d-35ad9f614946@57.129.16.151:443?path=%2F&security=tls&type=ws&sni=trojandns.utloop.xyz",
       "V2Ray": "vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICJ3dWxhYmluZ192bWVzc3dzLnV0bG9vcC54eXoiLAogICJhZGQiOiAidm1lc3N3cy51dGxvb3AueHl6IiwKICAicG9ydCI6ICI0NDMiLAogICJpZCI6ICJkYmRkNDUwMy1kN2MyLTQwYTAtYmYxZS05OGY1Nzk3YjY1OGEiLAogICJhaWQiOiAiMCIsCiAgIm5ldCI6ICJ3cyIsCiAgInR5cGUiOiAibm9uZSIsCiAgImhvc3QiOiAidm1lc3N3cy51dGxvb3AueHl6IiwKICAicGF0aCI6ICIvM2Y5MzRmYS8iLAogICJ0bHMiOiAidGxzIgp9Cg==",
-      "Vless": "vless://64df931b-58f0-4a3f-a0d3-c54cb82c6b3e@afrin.kurdosmarty.co.uk:443?path=%2Fvless&security=tls&encryption=none&insecure=1&host=afrin.kurdosmarty.co.uk&fp=chrome&type=ws&allowInsecure=1&sni=smarty.co.uk#",
+      "Vless": "vless://64df931b-58f0-4a3f-a0d3-c54cb82c6b3e@discoverflow.co:443?path=%2Fvless&security=tls&encryption=none&insecure=1&host=afrin.kurdosmarty.co.uk&fp=chrome&type=ws&allowInsecure=1&sni=smarty.co.uk#",
       "OpenVPNHost": "udp.uchetechs.com",
       "HUDPHost": "hysteria1.utloop.xyz"
     },
@@ -284,13 +284,13 @@
       "ProxyPort": ""
     },
     {
-      "Name": "All NET|Vmess Xray-core",
+      "Name": "JAM|All NET|Vmess Xray-core",
       "Protocol": "VMESS Xray/V2Ray",
       "Info": "Supports Some Countries",
       "Type": "Special",
       "Direct": false,
       "Websocket": true,
-      "Bug": "app.sololearn.com",
+      "Bug": "discoverflow.co",
       "Vmess": true,
       "Port": "443",
       "DNS": false,
@@ -299,7 +299,7 @@
       "Payload": "",
       "CustomProxy": false,
       "ProxyHost": "",
-      "Flag": "ROUTER",
+      "Flag": "JM",
       "ProxyPort": ""
     },
     {
